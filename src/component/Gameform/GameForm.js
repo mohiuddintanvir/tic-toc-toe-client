@@ -70,6 +70,9 @@ navigate('/gamepage')
         <button className="btn btn-warning h-[56px]  left-[0px] right-[0px] top-[0px] w-[328px] drop-shadow-[ 2px 2px 16px rgba(0, 0, 0, 0.16)] rounded-[8px] mt-3  ">
         Start game
         </button>
+        <input type="date" id="start" name="date"
+{...register("date", { required: true })}
+                        min="2022-01-01" max="2025-12-31" />
         
         
       </form>

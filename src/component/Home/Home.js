@@ -7,7 +7,7 @@ const Home = () => {
             <div className='mt-20'>
                 <h1 className='text-xl text-[#000000] text-center'>async</h1>
             <p className='text-[80px] font-[Bilbo] text-center text-[#000000]'>tic tac</p>
-            <p className='text-[80px] text-center text-[#000000]'>toe</p> 
+            <p className='text-[80px]  font-[Bilbo] text-center text-[#000000]'>toe</p> 
             </div>
            
             <div className='mt-20'>
