@@ -5,6 +5,8 @@ import './app.css'
 import { useState } from 'react';
 import Board from './Board';
 import Info from './Info';
+import { BiChevronLeft } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 
 
 
@@ -31,6 +33,11 @@ const GamePage = () => {
  
     return (
         <div className="App">
+            <h1 className=" text-4xl mt-5 text-black">
+        <Link to="/newgame">
+          <BiChevronLeft />
+        </Link>
+      </h1>
         {/* Shrinks the popup when there is no winner */}
         <div className={`winner ${winner !== '' ? '' : 'shrink'}`}>
             {/* Display the current winner */}

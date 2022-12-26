@@ -1,8 +1,10 @@
 import React from 'react';
 import './board.css'
+import { BiChevronLeft } from "react-icons/bi";
 
 // Importing the useState hook, useEffect hook and useRef hook
 import { useState, useEffect, useRef } from "react";
+import { Link } from 'react-router-dom';
 
 const Board = ({ reset, setReset, winner, setWinner }) => {
 
@@ -122,7 +124,14 @@ const Board = ({ reset, setReset, winner, setWinner }) => {
    
      })
     return (
+        
         <div ref={boardRef} className="board">
+
+<h1 className=" text-4xl mt-5 text-black">
+        <Link to="/newgame">
+          <BiChevronLeft />
+        </Link>
+      </h1>
             <div className="input input-1" 
                 onClick={(e) => draw(e, 1)}></div>
             <div className="input input-2" 
